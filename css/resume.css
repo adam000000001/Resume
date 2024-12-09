@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.about-me-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    gap: 20px;
+}
+
+.about-me {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.par-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.communicate, .adress, .about, .work, .skills {
+    font-size: 1rem;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills::before {
+    content: 'Навыки:';
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2980b9;
+}
+
+@media (max-width: 1200px) {
+.adaptive{
+width: 1000px;
+}
+}
+
+@media (max-width: 1000px) {
+.adaptive{
+width: 768px;
+}  
+}
+
+@media (max-width: 768px) {
+.adaptive{
+width: 480px;
+}    
+}
+
+@media (max-width: 480px) {
+ .adaptive{
+ width: 100%;
+}    
+}
